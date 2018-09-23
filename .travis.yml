@@ -9,5 +9,6 @@ language: general
 script:
   - python3 -V
   - python -V
+  - python3 -m ensurepip
   - python3 -m pip install pygments
   - pygmentize README.md
