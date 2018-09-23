@@ -1,0 +1,12 @@
+# Config file for automatic testing at travis-ci.org
+# This file will be regenerated if you run travis_pypi_setup.py
+
+sudo: false
+dist: trusty
+
+language: general
+
+script:
+  - python3 -V
+  - python -V
+  - python3 -m pip install pygments
