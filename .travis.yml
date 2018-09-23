@@ -4,7 +4,7 @@
 sudo: false
 dist: trusty
 
-language: general
+language: ruby
 
 addons:
   apt:
