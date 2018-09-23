@@ -6,9 +6,13 @@ dist: trusty
 
 language: general
 
+addons:
+  apt:
+    packages:
+      python3-pip
+
 script:
   - python3 -V
   - python -V
-  - python3 -m ensurepip
   - python3 -m pip install pygments
   - pygmentize README.md
