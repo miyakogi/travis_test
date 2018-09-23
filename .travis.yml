@@ -14,5 +14,5 @@ addons:
 script:
   - python3 -V
   - python -V
-  - python3 -m pip install pygments
+  - python3 -m pip install --user pygments
   - pygmentize README.md
