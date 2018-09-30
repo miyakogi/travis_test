@@ -11,8 +11,14 @@ addons:
     packages:
       python3-pip
 
-script:
+before_install:
   - python3 -V
   - python -V
+  - python3 -m pip --version
+  - python3 -m pip list
+
+install:
   - python3 -m pip install --user pygments
+
+script:
   - pygmentize README.md
