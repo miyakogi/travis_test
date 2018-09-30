@@ -18,7 +18,10 @@ before_install:
   - python3 -m pip list
 
 install:
+  - python3 -m pip install --user pip setuptools
   - python3 -m pip install --user pygments
+  - python3 -m pip --version
+  - python3 -m pip list
 
 script:
   - pygmentize README.md
